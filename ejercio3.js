@@ -15,7 +15,7 @@
 */
 
 //Función: sumaTres
-var sumaTres (x) {
+function sumaTres (x) {
     return x + 3;
   }
  
