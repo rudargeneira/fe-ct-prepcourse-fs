@@ -10,13 +10,11 @@ function esPositivo(num) {
 
    // Tu código:
 
-  a=Math.sign(num);
-  
-  if(a===1) console.log("Positivo"):
-  else if (a==-1) console.log("Negativo");
-  else if (a==0) console.log('False'); 
-}
+  if(num>=0){
 
+       console.log("Es positivo");
+  } else {console.log("negativo");}
+}
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
@@ -78,15 +76,14 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-if(letra.length()===0)
-  if (letra=='a'or letra=='e' or letra=='i' or letra=='o' or letra=='u')
-     console.log("Es Vocal");
-   else console.log("Dato Incorrecto");
-          
-else console.log("Dato Incorrecto");        
-
+if(letra.length===1){
+   if (letra=='a'|| letra=='e' || letra=='i' || letra=='o' || letra=='u') {
+         console.log("Es Vocal");
+   }else {console.log("Dato Incorrecto");}
+}else if(letra.length!=1) {         
+console.log("Dato Incorrecto");    
 }
-
+}
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    esPositivo,
