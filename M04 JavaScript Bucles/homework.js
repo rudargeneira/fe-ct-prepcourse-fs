@@ -8,23 +8,12 @@ function obtenerMayor(x, y) {
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
 
- 
-while (x>0) and (y>0);{
+   if(x>y) 
+   { console.log("x", x);
+   } else { console.log("Y",y);}
 
-if (x>y) {
-  console.log(' X ES MAYOR',x);
-  return x;
-
-} else {
-        console.log('Y es mayor ',y);
-        return y;
-       } 
-
-if (x===y) {
-  console.log("Son Iguale");
-
-           }
 };
+
 
 function mayoriaDeEdad(edad) {
    // Determinar si la persona puede ingresar al evento según su edad.
@@ -288,7 +277,7 @@ i,suma=0;
   console.log("El Valor des ",suma);
    }
 
-}
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
