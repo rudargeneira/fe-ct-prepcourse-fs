@@ -20,7 +20,8 @@ function suma(x, y) {
 function resta(x, y) {
    // Retorna el resultado de la resta.
    // Tu código:
-   return x-y;
+   resul=x-y;
+   return resul;
 }
 
 function divide(x, y) {

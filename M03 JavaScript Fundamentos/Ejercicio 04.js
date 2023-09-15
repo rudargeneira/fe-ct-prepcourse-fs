@@ -16,7 +16,7 @@ function elevarAlCubo(num) {
    // Tu código:
   a= Math.pow(num,3);
   num=a;
-   return num;
+  return num;
 }
 
 function elevar(num, exponent) {
