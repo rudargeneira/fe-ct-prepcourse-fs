@@ -108,12 +108,51 @@ function map(array, cb) {
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
+
+
+   var array=[5,4,3,2,1];
+   var pa=array;
+   var na=[];
+   var newa=na;
+   
+   function arreglo(pa,newa) {
+    
+   for (let i = 0; i<array.length; i++) {
+    console.log("Es la "+cb(), "Del elemento" ,array[i]);
+    na.push(array[i]); /**************** */
+    console.log("Este es el nuevo Vector", na);
+                                         }
+   return newa;
+   }
+   
+   function cb() {
+      return "Iteracion";
+                 }
+  var mostrar=arreglo();
+  console.log(mostrar);
+   
 }
 
 function filter(arrayOfStrings) {
    // Debes identificar todos los elementos el arreglo que comiencen con la letra "a".
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
+
+   
+   var s=["pedro","Alejo","armas"];
+  
+   for (let i = 0; i < s.length; i++) {
+    var v=[];
+    pl=s[i].charAt(0);
+        
+    if (pl=='a' || pl=='A'){
+        v.push(s[i]);
+        console.log("comienza con a ", v);
+    }
+        
+}
+
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
