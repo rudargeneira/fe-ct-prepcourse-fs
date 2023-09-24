@@ -6,6 +6,15 @@ function deObjetoAarray(objeto) {
    // Estos elementos debe ser cada par clave:valor del objeto recibido.
    // [EJEMPLO]: {D: 1, B: 2, C: 3} ---> [['D', 1], ['B', 2], ['C', 3]].
    // Tu código:
+
+   var objeto={d:1,b:2,c:3};
+   var na=Object.entries(objeto);
+   
+   for (var i=0; i<na.length; i++){
+   
+       console.log(na);
+   }
+
 }
 
 function numberOfCharacters(string) {
