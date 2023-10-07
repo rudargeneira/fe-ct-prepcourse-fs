@@ -6,18 +6,15 @@ function devolverPrimerElemento(array) {
    /*ElemntodelArray=array;
 
    console.log(ElementodelArray[0]);*/
-   return array[0];
+   console.log(array[0]);
 
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
-   
-    ultimoElemento=array.length-1;
-    console.log(ultimoElemento);
-    console.log(array[ultimoElemento]);
-
+   var ultimo=array.length-1;
+   console.log("El Ultimo elemento dentro del arreglo es ", array[ultimo]);
 
   
 
@@ -26,8 +23,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
-console.log(array.length-1);
-
+console.log(array.length);
 }
 
 function incrementarPorUno(array) {
@@ -35,19 +31,16 @@ function incrementarPorUno(array) {
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
 
-   var masuno=array.map(i=>i+1);
-   console.log(masuno);
-
-
-
+   var  narray=array.map(array=>array+1);
+   console.log("El nuevo array", narray);
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   n=array.push(elemento);
-   console.log(n) ;
+   array.push(elemento);
+   console.log(array) ;
    
 
 }
@@ -56,7 +49,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   return array.unshift(elemento);
+   array.unshift(elemento);
+   console.log(array);
 }
 
 function dePalabrasAFrase(palabras) {
@@ -74,24 +68,27 @@ function arrayContiene(array, elemento) {
    // Retornar true si está, o false si no está.
    // Tu código:
 
-   var esta=array.every(valor => valor===elemento);
-   console.log(esta);
+   for(var i=0;i<array.length;i++){
+      if(array[i]==elemento){
+      console.log(true);
+      break;
+      } else console.log(false);  
+        break;
+     } 
 }
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
-
-   ultimo=arrayOfNums.length-1;
+   
    var ac=0;
-          for (var i=0;i<=ultimo ;i++ ) {
+          for (var i=0;i<arrayOfNums.length ;i++ ) {
               ac=ac+arrayOfNums[i];
           }
          System.out.println("----------------");
         System.out.println(ac);
-  
-   
+    
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -99,36 +96,30 @@ function promedioResultadosTest(resultadosTest) {
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
 
- ultimo=resultadosTest.length-1;
+ 
  subpro=0, pro=0;
 
-   for (var i=0;i<=ultimo ; i++ ) {
-      subpro=subpro+array[i];
+   for (var i=0;i<resultadosTest.length ; i++ ) {
+      subpro=subpro+resultadosTest[i];
         
     } // fin del for 
       pro=subpro/array.length;
       System.out.println(pro);   
-
-
 }
 
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
-ultimo=arrayOfNums.length-1;
+
 may=0;
-for (let i = 0; i <=ultimo; i++) {
+for (let i = 0; i <arrayOfNums.length; i++) {
      if (arrayOfNums[i]>=may) {
-
-        may=arrayOfNums[i];
-      
-     } // fin del if
+        may=arrayOfNums[i];   
+      } 
    
-}// fin del for
-
+   }
 console.log(may);
-
 }
 
 function multiplicarArgumentos() {
@@ -142,14 +133,13 @@ function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
    
-   ultimo=array.length-1;
+   
    idiez=0;
-        for (var i=0;i<=ultimo ;i++ ) {
+        for (var i=0;i<array.length ;i++ ) {
          if (array[i]>18)    {
-            idiez=idiez+1;  
-             
-         }// fin del if       
-    }// fin del for 
+            idiez=idiez+1;    
+         }    
+      }
     System.out.println(idiez);
 }
 
@@ -159,12 +149,12 @@ function diaDeLaSemana(numeroDeDia) {
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
   
-   // var numerodedia=2;
    if (numerodedia==1 || numerodedia==2) {
-       if (numerodedia==1) { System.out.println("Domingo");}
-             if (numerodedia==2) { System.out.println("Lunes"); }
-   }// if 1 o 2
-   else System.out.println("Es Laboral");
+      if (numerodedia==1) { console.log("Domingo");}
+            if (numerodedia==2) { console.log("Lunes"); }
+    }// if 1 o 2
+    else console.log("Es Laboral");
+    
 }
 
 function empiezaConNueve(num) {
@@ -178,9 +168,9 @@ function todosIguales(array) {
    // Caso contrario retornar false.
    // Tu código:
   
-  int ultimo=array.length-1;
+  
   resp=Boolean; 
-  for (var i=0; i<=ultimo ;i++ ) {
+  for (var i=0; i<=array.length; i++ ) {
     
       if (array[i]==array[i+1]) {
       System.out.println("hay igualdad");    
@@ -202,10 +192,10 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
-   int ult=mes.length-1;
-   System.out.println(mes[ult]);
+   
+   console.log(mes[ult]);
 
-   for (var i=0;i<=ult ;i++ ) {
+   for (var i=0;i<array.length ;i++ ) {
            if (mes[i]=="enero") {
                orden[0]=mes[i];
            } else
@@ -218,9 +208,9 @@ function mesesDelAño(array) {
        
    }// for
 
-   for (var i=0;i<=orden.length-1 ;i++ ) {
+   for (var i=0;i<orden.length-1 ;i++ ) {
       if (orden[i]==null) {
-         System.out.println("no Existe Algun Mes Solicitado");
+         console.log("no Existe Algun Mes Solicitado");
          break;
    
       System.out.println(orden[i]);    
@@ -232,10 +222,10 @@ function tablaDelSeis() {
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
 
-   int[] array=new int[11];
+   var array=new int[11];
       
    
-       for(int i=0;i<=11;i++){
+       for(var i=0;i<=11;i++){
             array[i]= 6*i;
            System.out.println(array[i]);
 
@@ -249,9 +239,9 @@ function mayorACien(array) {
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
 
-   int[] array={99,100,140,150,190,200};
+   var array=[99,100,140,150,190,200];
         
-   int[] nuevo =new int[4];
+   var nuevo =new int[4];
        for (var i=0;i<=nuevo.length ;i++ ) {
             if (array[i]>100){
                 nuevo[i]=array[i];

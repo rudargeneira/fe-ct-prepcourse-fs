@@ -6,8 +6,9 @@ function sonIguales(x, y) {
    // De lo contrario, retorna false.
    // Tu código:
 
-
-   if(x===y)  console.log(true);
+   if(x===y) {
+      console.log(true);
+   } 
    else console.log(false);
 }
 
@@ -15,7 +16,7 @@ function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
    // Tu código:
-   if (str1.compareTo(str2)==0) console.log(true);
+   if (str1.compareTo(str2)==0){ console.log(true);}
    else  return false; 
   }
 
@@ -25,8 +26,8 @@ function menosQueNoventa(num) {
    // Tu código:
 
 
-    if (num<90) console.log(true);
-    else  if (num>=90) console.log(false);  
+    if (num<90) {console.log(true);}
+    else  console.log(false);  
 
    }
 
@@ -35,9 +36,9 @@ function mayorQueCincuenta(num) {
    // De lo contrario, retorna false.
    // Tu código:
 
-     if (num>50) console.log(true);
-      else if(num<=50) console.log(false);
-         
+    
+   if (num>50) {console.log(true);}
+   else if(num<=50) console.log(false);   
 }
 
 function esPar(num) {
@@ -45,7 +46,7 @@ function esPar(num) {
    // De lo contrario, retorna false.
    // Tu código:
     
-   if(num%2===0) console.log(true);
+   if(num%2===0) {console.log(true);}
     else console.log(false);
 
 }
@@ -55,9 +56,9 @@ function esImpar(num) {
    // De lo contrario, retorna false.
    // Tu código:
 
-if(num%2===0 ) console.log(false);
+if(num%2===0 ) {console.log(false);}
 else console.log(true); 
-
+}
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

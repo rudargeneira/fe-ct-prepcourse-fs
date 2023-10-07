@@ -15,7 +15,7 @@ class Persona {
       this.edad=edad;
       this.domicilio;
     }
-    datos=function(){
+    detalle(){
     console.log(this.nombre+this.apellido+this.edad+this.domicilio);
     }
 }
@@ -40,7 +40,7 @@ function agregarMetodo() {
          this.nombre=nombre;
          this.edad=edad;
       }
-      muestra=function(nombre,eddad){
+      muestra(nombre,eddad){
          console.log(this.nombre + this.edad);
       }
    }

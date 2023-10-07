@@ -9,7 +9,7 @@ function obtenerMayor(x, y) {
    // Tu código:
 
    if(x>y) 
-   { console.log("x", x);
+   { console.log("EL MAYOR ES X", x);
    } else { console.log("Y",y);}
 
 };
@@ -141,9 +141,9 @@ function estaEnRango(num) {
    // Tu código:
    
    if (num>20 && num<50) {
-     console.log('True');
-      return true;
-   }
+     console.log(True);
+      
+   } else console.log(false);
 };
 
 function esEntero(num) {
@@ -154,10 +154,12 @@ function esEntero(num) {
    // De lo contrario, retorna false.
    // Tu código:
    
-   a=num%1;
-   if(a===0){
-     return true; 
-   } else { return false;}
+   //num=555;
+    a=num%1;
+    if(a===0){
+    console.log(true);
+    } else { console.log (false);}
+    
 }
 
 function fizzBuzz(num) {
@@ -166,10 +168,7 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-
-
-
-    // Si la suma es divisible por 3, el número también es divisible por 3
+   // Si la suma es divisible por 3, el número también es divisible por 3
    
    if (num%5===0){
       console.log("buzz");
@@ -178,10 +177,7 @@ function fizzBuzz(num) {
       
     if (num % 3 === 0) {
      console.log("fizz");
-    } else if (num%5===0){
-         System.out.println("buzz");
-    
-          } 
+    } 
 
 if(num%5===0 && num%3===0) {
 
@@ -193,34 +189,35 @@ if(num%5===0 && num%3===0) {
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
-   
- 
- 
    // Si todos los argumentos son cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
- 
- 
-   // Si num1 es mayor a num2 y a num3, y además es positivo, retornar ---> "Numero 1 es mayor y positivo".
-   if (num1>0 && num1>num2 && num2>num3){
-   console.log("numero 1 es positivo y mayor");
-
-
- }  
- // Si alguno de los tres números es negativo, retornar ---> "Hay negativos".
- if(num1<0 || num2<0 || num3<0 ){
-    console.log("alguno es negativo");
-
-
- }
-  // Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
-  if(num1<num3 && num3>num2){
-  num3+1;
-  return num3;
+   num1=-11,num2=9,num3=10;
+   if (num1!=0 && num2!=0 && num3!=0)
+   {
+     // Si num1 es mayor a num2 y a num3, y además es positivo, retornar ---> "Numero 1 es mayor y positivo".
+     if (num1>0 && num1>num2 && num1>num3){
+     console.log("numero 1 es positivo y mayor");
+  
+   }  
+   // Si alguno de los tres números es negativo, retornar ---> "Hay negativos".
+   if(num1<0 || num2<0 || num3<0 ){
+      console.log("alguno es negativo");
+  
+  
+   }
+    // Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
+    if(num1<num3 && num3>num2){
+    num3++;
+    console.log("el mayor es El Número 3 y le Sumo 1=> ",num3);
+    }
+  
+  
+  } else console.log(false);
   }
+   
 
 
-}
 
 function esPrimo(num) {
    // Retornar true si "num" es primo.
@@ -229,9 +226,20 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+   //num=89;
+       for(var i=2;i<num-1;i++){
+        var es=num % i;
+        if(es!=0)
+        //console.log(es);
+        console.log(true); 
+        break;     
+       } if (es==0){
+        console.log(false);
+       }
+      
+      }
 
    
-}
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".

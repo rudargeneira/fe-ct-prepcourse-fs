@@ -5,23 +5,23 @@ function mayuscula(nombre) {
    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
    // [Ejemplo]: "mario" ----> "Mario".
    // Tu código:
-} function cambio(nombre){
+
 
    return nombre.substring(0, 1).toUpperCase() + nombre.substring(1);
-}
-}
 
+}
 
 function invocarCallback(cb) {
    // Invoca/ejecuta el callback `cb`.
    // [NOTA]: no debes reotrnar nada.
    // Tu código:
-
-   function invocar(cb) {
-    return cb();
+   cb();
+}
+function cb() {
+    console.log("ESTA ES LA FUNCION CALL BACK");
 
    }
-}
+
 
 function operacionMatematica(num1, num2, cb) {
    // En este ejercicio recibirás dos números y un callback.

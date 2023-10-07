@@ -13,35 +13,35 @@ function esPositivo(num) {
   if(num>=0){
 
        console.log("Es positivo");
-  } else {console.log("negativo");}
+  } else console.log("negativo");
 }
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
    console.log(str+"!");
-   return str;
+   
 }
 
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
-   return nombre+"  "+apellido;
+  console.log (nombre+ " " +apellido);
 }
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return "Hola"+nombre;
+   console.log ("Hola"+nombre);
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
     h=alto*ancho;
-    return h;
+    console.log (h);
 
 }
 
@@ -50,7 +50,7 @@ function retornarPerimetro(lado) {
    // Debes retornar su perímetro.
    // Tu código:
    peri=Math.pow(lado,4);
-   return peri;
+   console.log (peri);
 }
 
 function areaDelTriangulo(base, altura) {
@@ -58,16 +58,17 @@ function areaDelTriangulo(base, altura) {
    // Tu código:
 
    a=(base*altura)/2;
-   return a;
+   console.log (a);
 }
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   d=euro*1.20;
-   return d;
-
+  //  euro=5;
+    d=euro*1.20;
+    console.log (d);
+ 
 
 }
 
